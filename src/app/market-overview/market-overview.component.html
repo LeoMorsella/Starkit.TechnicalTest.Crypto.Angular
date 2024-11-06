@@ -1,0 +1,53 @@
+<div class="container">
+<section class="stats-section">
+  <h2>Market Cap Percentage</h2>
+<table>
+    <thead>
+      <tr>
+        <th>Cryptocurrency</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of marketOverviewPercentage">
+        <td>{{ item.name }}</td>
+        <td>{{ item.marketCapPercentage}} %</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section class="stats-section">
+  <h2>Total Market Cap</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Cryptocurrency</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of marketOverviewTotalMarket">
+        <td>{{ item.name }}</td>
+        <td>{{ item.marketCapValue}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section class="stats-section">
+  <h2>Total Market Volume</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Cryptocurrency</th>
+        <th>Volume</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of marketOverviewTotalVolume">
+        <td>{{ item.name }}</td>
+        <td>{{item.marketCapVolume}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+</div>

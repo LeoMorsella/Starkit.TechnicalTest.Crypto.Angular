@@ -1,0 +1,55 @@
+<div class="container"  *ngIf="currencyInfo">
+  <div class="stats-header">
+      <h1>{{ currencyInfo.symbol }} Stats</h1>
+  </div>
+  <div class="stats">
+      <div class="stat">
+          <span class="stat-name">Last Price:</span>
+          <span class="stat-value">{{ currencyInfo.last ?? 'Data not available' }}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Buy Price:</span>
+          <span class="stat-value">{{ currencyInfo.buy ?? 'Data not available' }}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Sell Price:</span>
+          <span class="stat-value">{{ currencyInfo.sell ?? 'Data not available' }}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Change Rate:</span>
+          <span class="stat-value negative">{{ currencyInfo.changeRate ?? 'Data not available' }}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Change Price:</span>
+          <span class="stat-value negative">{{ currencyInfo.changePrice ?? 'Data not available' }}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">High:</span>
+          <span class="stat-value">{{ currencyInfo.high ?? 'Data not available'}}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Low:</span>
+          <span class="stat-value">{{ currencyInfo.low ?? 'Data not available'}}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Volume:</span>
+          <span class="stat-value">{{ currencyInfo.vol ?? 'Data not available' }}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Volume Value:</span>
+          <span class="stat-value">{{ currencyInfo.volValue ?? 'Data not available'}}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Average Price:</span>
+          <span class="stat-value">{{ currencyInfo.averagePrice ?? 'Data not available'}}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Taker Fee Rate:</span>
+          <span class="stat-value">{{ currencyInfo.takerFeeRate ?? 'Data not available'}}</span>
+      </div>
+      <div class="stat">
+          <span class="stat-name">Maker Fee Rate:</span>
+          <span class="stat-value">{{ currencyInfo.makerFeeRate ?? 'Data not available'}}</span>
+      </div>
+  </div>
+</div>

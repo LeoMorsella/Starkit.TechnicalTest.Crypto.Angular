@@ -1,0 +1,16 @@
+<table class="crypto-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Currency</th>
+      <th>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let currency of currencies" (click)="viewCurrency(currency.symbol)">
+      <td>{{ currency.rank}}</td>
+      <td>{{ currency.name }}</td>
+      <td>{{ currency.symbol }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,54 @@
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.stats-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stats-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.stat:last-child {
+    border-bottom: none;
+}
+
+.stat-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+.stat-value {
+    font-size: 14px;
+    color: #555;
+}
+
+.stat-value.negative {
+    color: #e74c3c;
+}
+
+.stat:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
